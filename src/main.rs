@@ -8,7 +8,7 @@ use rand::RngCore;
 use rayon::prelude::*;
 
 pub fn main() {
-    const N: usize = 10;
+    const N: usize = 100;
     const SAMPLES: u64 = 1_000_000_000;
 
     let progress =
