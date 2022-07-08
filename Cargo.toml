@@ -1,0 +1,18 @@
+[package]
+name = "prison"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+rand = { version = "0.8.5", features = [ "small_rng" ] }
+bitvec = "1.0.0"
+rayon = "1.5.3"
+statrs = "0.15.0"
+indicatif = { version = "0.17.0-rc.11", features = [ "rayon" ] }
+
+[dev-dependencies]
+criterion = "0.3.6"
+
+[[bench]]
+name = "smart_solve"
+harness = false
